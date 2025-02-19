@@ -1,8 +1,8 @@
-#[[redirects]]
-#from = "https://onderzoek-remzi.netlify.app/*"
-#to = "https://onderzoek.remzi.info/:splat"
-#status = 301
-#force = true
+[[redirects]]
+from = "https://onderzoek-remzi.netlify.app/*"
+to = "https://onderzoek.remzi.info/:splat"
+status = 301
+force = true
 
 # Default favicon redirect
 [[redirects]]

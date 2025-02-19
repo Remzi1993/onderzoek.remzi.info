@@ -1,0 +1,25 @@
+{
+  "name": "onderzoek.remzi.info",
+  "version": "1.0.0",
+  "description": "Website waar alle onderzoeken van Remzi Cavdar staan",
+  "author": "Remzi Cavdar",
+  "license": "MIT License",
+  "type": "module",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.7.2",
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
+    "marked": "^15.0.7"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@web/rollup-plugin-html": "^2.3.0",
+    "rollup": "^4.12.0",
+    "rollup-plugin-copy": "^3.5.0"
+  }
+}

@@ -1,0 +1,17 @@
+#[[redirects]]
+#from = "https://onderzoek-remzi.netlify.app/*"
+#to = "https://onderzoek.remzi.info/:splat"
+#status = 301
+#force = true
+
+# Default favicon redirect
+[[redirects]]
+from = "/favicon.ico"
+to = "https://storage.remzi.info/assets/images/logo.png"
+status = 301
+
+# 404
+[[redirects]]
+from = "/*"
+to = "/404.html"
+status = 404

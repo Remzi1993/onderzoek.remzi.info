@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="https://storage.remzi.info/assets/images/logo.png">
+    <title>Onderzoeken van Remzi Cavdar</title>
+    <meta name="description"
+          content="Een omgeving waar ik onderzoek doe naar verschillende onderwerpen. Met vergelijkingstabellen en onderzoeksresultaten. Bootstrap wordt gebruikt om snel dingen weer te kunnen weergeven met een Minimal Reproducible Example (MRE).">
+    <link rel="canonical" href="https://onderzoek.remzi.info">
+    <meta name="author" content="Remzi Cavdar">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Bootstrap Icons CSS -->
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+</head>
+<body>
+<main class="py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-xl-10">
+                <div id="markdown"></div>
+                <noscript>Please turn on JavaScript to see the directory listing</noscript>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../node_modules/marked/marked.min.js"></script>
+<script>
+    fetch('./README.md')
+        .then(response => response.text())
+        .then(markdown => {
+            document.querySelector('#markdown').innerHTML = marked.parse(markdown);
+        })
+        .catch(error => {
+            console.error('Error loading README.md:', error);
+            document.querySelector('#markdown').innerHTML = '<p>Error loading content.</p>';
+        });
+</script>
+</body>
+</html>

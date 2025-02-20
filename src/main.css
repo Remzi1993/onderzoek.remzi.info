@@ -1,0 +1,12 @@
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+    background-color: rgb(108, 117, 125);
+    color: white;
+}
+
+@media (min-width: 992px) {
+    .sticky-sidebar {
+        position: sticky;
+        top: 2rem;
+        overflow-y: auto;
+    }
+}

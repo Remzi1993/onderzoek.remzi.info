@@ -15,14 +15,74 @@
     <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="../src/main.css">
 </head>
 <body>
 <main class="py-4">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-xl-10">
+            <div class="col-12 col-xl-9">
                 <div id="markdown"></div>
                 <noscript>Please turn on JavaScript to see the directory listing</noscript>
+
+                <h3>Vergelijkingstabel met verschillende technieken</h3>
+                <h4>🗂️ Databases</h4>
+                <div class="table-responsive">
+                    <table class="table table-striped table-hover">
+                        <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Naam</th>
+                            <th scope="col">Documentatie & support</th>
+                            <th scope="col">Voordelen t.o.v. anderen</th>
+                            <th scope="col">Nadelen t.o.v. anderen</th>
+                            <th scope="col">Gebruikscases</th>
+                            <th scope="col">Configuratie</th>
+                        </tr>
+                        </thead>
+                        <tbody class="table-group-divider">
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>PostgreSQL</td>
+                            <td>Zeer goed – Uitgebreide documentatie, veel praktijkvoorbeelden en tutorials, sterke
+                                community support
+                            </td>
+                            <td>ACID-compliant, robuust, ondersteunt complexe queries en relaties, sterke integriteit
+                            </td>
+                            <td>Zwaarder dan SQLite, configuratie kan complexer zijn</td>
+                            <td>Grote en complexe projecten – Ideaal voor applicaties met veel data, complexe relaties
+                                en
+                                schaalbaarheid nodig
+                            </td>
+                            <td>Moeilijker – Vereist setup met gebruikers, rechten en configuratiebestanden, maar goed
+                                gedocumenteerd
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>MySQL en varianten zoals (MariaDB)</td>
+                            <td>Zeer goed – Zeer veel documentatie en tutorials, groot ecosysteem</td>
+                            <td>Snel bij veel reads, breed ondersteund, eenvoudig te gebruiken</td>
+                            <td>Minder flexibel dan PostgreSQL voor complexe queries</td>
+                            <td>Grote en middelgrote projecten – Goede keuze als performance en eenvoud belangrijker zijn dan complexe relaties</td>
+                            <td>Gemiddeld – Relatief eenvoudig op te zetten, maar tuning vereist voor prestaties</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-12 col-xl-3 ms-auto">
+                <div class="sticky-sidebar">
+                    <div class="sidebar-container">
+                        <strong>Dit onderzoek wordt uitgevoerd door:</strong>
+                        <p>Remzi Cavdar - <a href="https://remzi.info" target="_blank">visitekaartje</a></p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

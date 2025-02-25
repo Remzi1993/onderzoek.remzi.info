@@ -21,14 +21,14 @@
 <main class="py-4">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-xl-9">
+            <div class="col-12 col-xxl-9 pin-container">
                 <div id="markdown"></div>
                 <noscript>Please turn on JavaScript to see the directory listing</noscript>
 
                 <h3>Vergelijkingstabel met verschillende technieken</h3>
                 <h4>🗂️ Databases</h4>
                 <div class="table-responsive">
-                    <table class="table table-striped table-hover">
+                    <table class="table table-striped table-hover pinned-table">
                         <thead>
                         <tr>
                             <th scope="col">#</th>
@@ -43,6 +43,15 @@
                         <tbody class="table-group-divider">
                         <tr>
                             <th scope="row">1</th>
+                            <td>MySQL en varianten zoals (MariaDB)</td>
+                            <td>Zeer goed – Zeer veel documentatie en tutorials, groot ecosysteem</td>
+                            <td>Snel bij veel reads, breed ondersteund, eenvoudig te gebruiken</td>
+                            <td>Minder flexibel dan PostgreSQL voor complexe queries</td>
+                            <td>Grote en middelgrote projecten – Goede keuze als performance en eenvoud belangrijker zijn dan complexe relaties</td>
+                            <td>Gemiddeld – Relatief eenvoudig op te zetten, maar tuning vereist voor prestaties</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
                             <td>PostgreSQL</td>
                             <td>Zeer goed – Uitgebreide documentatie, veel praktijkvoorbeelden en tutorials, sterke
                                 community support
@@ -59,24 +68,36 @@
                             </td>
                         </tr>
                         <tr>
-                            <th scope="row">2</th>
-                            <td>MySQL en varianten zoals (MariaDB)</td>
-                            <td>Zeer goed – Zeer veel documentatie en tutorials, groot ecosysteem</td>
-                            <td>Snel bij veel reads, breed ondersteund, eenvoudig te gebruiken</td>
-                            <td>Minder flexibel dan PostgreSQL voor complexe queries</td>
-                            <td>Grote en middelgrote projecten – Goede keuze als performance en eenvoud belangrijker zijn dan complexe relaties</td>
-                            <td>Gemiddeld – Relatief eenvoudig op te zetten, maar tuning vereist voor prestaties</td>
+                            <th scope="row">3</th>
+                            <td>SQLite</td>
+                            <td>Goed – Basisdocumentatie en veel tutorials beschikbaar
+                            </td>
+                            <td>Lichtgewicht, eenvoudig te integreren, geen aparte server nodig
+                            </td>
+                            <td>Niet geschikt voor gelijktijdige zware workloads, geen sterke concurrentiecontrole</td>
+                            <td>Kleine projecten – Perfect voor embedded applicaties en mobiele apps waar eenvoud en snelheid tellen
+                            </td>
+                            <td>Zeer eenvoudig – Geen serverinstallatie, slechts een bestand nodig
+                            </td>
                         </tr>
                         <tr>
-                            <th scope="row">3</th>
-                            <td colspan="2">Larry the Bird</td>
-                            <td>@twitter</td>
+                            <th scope="row">4</th>
+                            <td>MongoDB</td>
+                            <td>Goed – Uitgebreide documentatie, veel voorbeelden, actieve community
+                            </td>
+                            <td>Flexibel schema, makkelijk schaalbaar voor grote datasets
+                            </td>
+                            <td>Minder geschikt voor complexe relaties, meer opslagruimte nodig</td>
+                            <td>Grote projecten – Ideaal voor projecten waar flexibele schema's en hoge schaalbaarheid nodig zijn
+                            </td>
+                            <td>Gemiddeld – Snelle setup, maar tuning vereist voor optimalisatie
+                            </td>
                         </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
-            <div class="col-12 col-xl-3 ms-auto">
+            <div class="col-12 col-xxl-3 ms-auto d-none d-xxl-block">
                 <div class="sticky-sidebar">
                     <div class="sidebar-container">
                         <strong>Dit onderzoek wordt uitgevoerd door:</strong>
@@ -90,6 +111,7 @@
 
 <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 <script src="../node_modules/marked/marked.min.js"></script>
+<script src="../src/main.js"></script>
 <script>
     fetch('./README.md')
         .then(response => response.text())

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="https://storage.remzi.info/assets/images/logo.png">
-    <title>Onderzoeken van Remzi Cavdar</title>
+    <title>Onderzoeksomgeving van Remzi Cavdar</title>
     <meta name="description"
           content="Een omgeving waar ik onderzoek doe naar verschillende onderwerpen. Met vergelijkingstabellen en onderzoeksresultaten. Bootstrap wordt gebruikt om snel dingen weer te kunnen weergeven met een Minimal Reproducible Example (MRE).">
     <link rel="canonical" href="https://onderzoek.remzi.info">
@@ -23,9 +23,9 @@
         <div class="row">
             <div class="col-12 col-xxl-10 pin-container">
                 <div id="markdown"></div>
-                <noscript>Please turn on JavaScript to see the directory listing</noscript>
-
-                <h3>Vergelijkingstabel met verschillende technieken</h3>
+                <h3>Vergelijkingstabellen met verschillende technieken</h3>
+                <p>Voor de (web)app moet ik een goed overzicht hebben van meest gangbare en meest gebruikte databases, frameworks en libraries, zodat ik het allemaal met elkaar kan vergelijken en een gedegen adviesrapport kan uitbrengen daarover.</p>
+                <br>
                 <h4>🗂️ Databases</h4>
                 <div class="table-responsive">
                     <table class="table table-striped table-hover pinned-table">
@@ -1008,6 +1008,297 @@
                             <td>
                                 Gemiddeld – <code>slint = "..."</code> in Cargo.toml,<br />
                                 .slint UI-bestanden en Rust code
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h4>🎨 Web Frontend Design Frameworks / CSS frameworks</h4>
+                <div class="table-responsive">
+                    <table class="table table-striped table-hover pinned-table">
+                        <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Naam</th>
+                            <th scope="col">Documentatie &amp; Support</th>
+                            <th scope="col">Voordelen t.o.v. anderen</th>
+                            <th scope="col">Nadelen t.o.v. anderen</th>
+                            <th scope="col">Gebruikscases</th>
+                            <th scope="col">Configuratie</th>
+                        </tr>
+                        </thead>
+                        <tbody class="table-group-divider">
+                        <!-- 1: Bootstrap -->
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Bootstrap</td>
+                            <td>
+                                Zeer goed – Grootste community,<br />
+                                uitgebreide documentatie,<br />
+                                veel tutorials
+                            </td>
+                            <td>
+                                • Veel kant-en-klare componenten<br />
+                                • Responsief grid-systeem<br />
+                                • Consistente styling out-of-the-box
+                            </td>
+                            <td>
+                                • Grote CSS-bundel (tenzij je custom builds maakt)<br />
+                                • Minder flexibel als je totale controle over UI wilt
+                            </td>
+                            <td>
+                                Kleine tot grote projecten,<br />
+                                snelle prototyping,<br />
+                                consistente enterprise-UI
+                            </td>
+                            <td>
+                                Eenvoudig – Download via CDN of npm,<br />
+                                voeg de CSS/JS toe in je HTML
+                            </td>
+                        </tr>
+                        <!-- 2: Tailwind CSS -->
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Tailwind CSS</td>
+                            <td>
+                                Goed – Duidelijke docs,<br />
+                                groeiende community,<br />
+                                veel voorbeeld-snippets
+                            </td>
+                            <td>
+                                • Utility-first benadering<br />
+                                • Zeer flexibel en configureerbaar<br />
+                                • Kleine CSS als je purge gebruikt
+                            </td>
+                            <td>
+                                • “HTML kan onleesbaar” worden door veel utility-klassen<br />
+                                • Geen kant-en-klare componenten
+                            </td>
+                            <td>
+                                Middelgrote tot grote projecten,<br />
+                                waar design-consistentie én flexibiliteit vereist zijn
+                            </td>
+                            <td>
+                                Gemiddeld – npm-install,<br />
+                                configuratie in <code>tailwind.config.js</code>,<br />
+                                purge/optimize voor productie
+                            </td>
+                        </tr>
+                        <!-- 3: Bulma -->
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Bulma</td>
+                            <td>
+                                Goed – Duidelijke docs,<br />
+                                actieve community
+                            </td>
+                            <td>
+                                • Pure CSS (geen JS nodig)<br />
+                                • Responsief en lichtgewicht<br />
+                                • Handige grid- en helperklassen
+                            </td>
+                            <td>
+                                • Minder componenten dan Bootstrap<br />
+                                • Geen officiële JS-plugins
+                            </td>
+                            <td>
+                                Kleine tot middelgrote projecten,<br />
+                                waar je basiscomponenten en minimalisme wenst
+                            </td>
+                            <td>
+                                Eenvoudig – Download of via CDN/npm,<br />
+                                directe import van de CSS
+                            </td>
+                        </tr>
+                        <!-- 4: Foundation -->
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Foundation</td>
+                            <td>
+                                Goed – Uitgebreide docs,<br />
+                                community iets kleiner dan Bootstrap
+                            </td>
+                            <td>
+                                • Responsief, modulair<br />
+                                • Krachtig grid & ARIA-support<br />
+                                • Geschikt voor snelle prototypes
+                            </td>
+                            <td>
+                                • Minder populair in 2023,<br />
+                                • Kleiner ecosysteem/plugins
+                            </td>
+                            <td>
+                                Enterprise en grote projecten<br />
+                                die meer controle nodig hebben<br />
+                                dan Bootstrap
+                            </td>
+                            <td>
+                                Gemiddeld – npm/bower-install,<br />
+                                SCSS configuratie en JS plugins
+                            </td>
+                        </tr>
+                        <!-- 5: Materialize -->
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Materialize</td>
+                            <td>
+                                Redelijk – Docs aanwezig,<br />
+                                community best actief
+                            </td>
+                            <td>
+                                • Gebaseerd op Material Design<br />
+                                • Mooie kant-en-klare componenten<br />
+                                • Relatief gemakkelijk te leren
+                            </td>
+                            <td>
+                                • Weinig vrijheid buiten Material<br />
+                                Design guidelines<br />
+                                • Niet zo breed gebruikt als Bootstrap
+                            </td>
+                            <td>
+                                Middelgrote projecten,<br />
+                                design-consistentie volgens Material
+                            </td>
+                            <td>
+                                Eenvoudig – CDN of npm,<br />
+                                import CSS/JS,<br />
+                                standaard classes voor Material UI
+                            </td>
+                        </tr>
+                        <!-- 6: Semantic UI -->
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Semantic UI</td>
+                            <td>
+                                Redelijk – Heldere docs,<br />
+                                community kleiner dan Bootstrap
+                            </td>
+                            <td>
+                                • Leest als “menselijke” class-namen<br />
+                                • Uitgebreide theming-mogelijkheden
+                            </td>
+                            <td>
+                                • Grotere bundel<br />
+                                • Kan complex zijn qua theming-structuur
+                            </td>
+                            <td>
+                                Middelgrote projecten,<br />
+                                apps die leesbare class-structuren willen
+                            </td>
+                            <td>
+                                Gemiddeld – npm-install,<br />
+                                Gulp of CLI-setup voor thema’s
+                            </td>
+                        </tr>
+                        <!-- 7: Material UI (MUI) -->
+                        <tr>
+                            <th scope="row">7</th>
+                            <td>Material UI (MUI)</td>
+                            <td>
+                                Zeer goed – Officiële site met veel demos,<br />
+                                grote community, populaire in React-ecosysteem
+                            </td>
+                            <td>
+                                • Volledige Material Design implementatie<br />
+                                • Veel kant-en-klare React componenten<br />
+                                • Uitgebreide theming
+                            </td>
+                            <td>
+                                • Gebonden aan React<br />
+                                • Relatief grote bundel<br />
+                                • Minder geschikt als je geen Material Design wilt
+                            </td>
+                            <td>
+                                Middelgrote tot grote React-projecten<br />
+                                waar Material Design centraal staat
+                            </td>
+                            <td>
+                                npm-install <code>@mui/material</code> etc.,<br />
+                                importeren in je React-code,<br />
+                                theming via <code>ThemeProvider</code>
+                            </td>
+                        </tr>
+                        <!-- 8: Pico CSS -->
+                        <tr>
+                            <th scope="row">8</th>
+                            <td>Pico CSS</td>
+                            <td>
+                                Redelijk – Kleiner project,<br />
+                                docs zijn simpel maar duidelijk
+                            </td>
+                            <td>
+                                • “Classless” CSS framework,<br />
+                                • Zeer lichtgewicht,<br />
+                                • Direct nette styling van HTML-elementen
+                            </td>
+                            <td>
+                                • Beperkt in geavanceerde componenten<br />
+                                • Minder bekend dan Tailwind/Bootstrap
+                            </td>
+                            <td>
+                                Kleine tot middelgrote projecten,<br />
+                                snelle prototyping, minimalisme
+                            </td>
+                            <td>
+                                Eenvoudig – CDN of npm,<br />
+                                minimale configuratie,<br />
+                                direct HTML tag styling
+                            </td>
+                        </tr>
+                        <!-- 9: Pure CSS -->
+                        <tr>
+                            <th scope="row">9</th>
+                            <td>Pure CSS</td>
+                            <td>
+                                Redelijk – Yahoo-projekt,<br />
+                                docs zijn overzichtelijk maar klein
+                            </td>
+                            <td>
+                                • Extreem klein (onder 4KB)<br />
+                                • Modulair (grid, forms, etc.)
+                            </td>
+                            <td>
+                                • Weinig componenten<br />
+                                • Geen JS of theming-mogelijkheden
+                            </td>
+                            <td>
+                                Zeer kleine/mobiele sites,<br />
+                                performance-critical apps,<br />
+                                basisstijlen
+                            </td>
+                            <td>
+                                Eenvoudig – importeer pure-min.css,<br />
+                                configureer via klassen<br />
+                                (grid, form, etc.)
+                            </td>
+                        </tr>
+                        <!-- 10: DaisyUI -->
+                        <tr>
+                            <th scope="row">10</th>
+                            <td>daisyUI</td>
+                            <td>
+                                Goed – Snelle docs,<br />
+                                Tailwind-plugin,<br />
+                                groeiende community
+                            </td>
+                            <td>
+                                • Kant-en-klare componenten bovenop Tailwind<br />
+                                • Themable, met veel presets<br />
+                                • Behoudt de utility-first benadering
+                            </td>
+                            <td>
+                                • Vereist installatie van Tailwind CSS<br />
+                                • Nieuwe releases soms breaking changes
+                            </td>
+                            <td>
+                                Middelgrote tot grote projecten,<br />
+                                waar je Tailwind én reusable componenten wilt
+                            </td>
+                            <td>
+                                Gemiddeld – Installeer Tailwind + daisyUI,<br />
+                                configuratie in <code>tailwind.config.js</code>,<br />
+                                classes voor componenten en thema’s
                             </td>
                         </tr>
                         </tbody>

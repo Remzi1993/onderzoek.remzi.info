@@ -87,10 +87,15 @@
   position: relative;
   z-index: 1;
   overflow-x: auto;
+  margin-bottom: 3rem;
 }
 
 /* Fix for any potential z-index conflicts */
 .table-responsive, .sticky-header-container {
   will-change: transform;
   backface-visibility: hidden;
+}
+
+#markdown {
+  margin-bottom: 2rem;
 }

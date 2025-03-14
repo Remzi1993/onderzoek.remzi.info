@@ -21,7 +21,7 @@
 <main class="py-4">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-xxl-9 pin-container">
+            <div class="col-12 col-xxl-10 pin-container">
                 <div id="markdown"></div>
                 <noscript>Please turn on JavaScript to see the directory listing</noscript>
 
@@ -33,6 +33,7 @@
                         <tr>
                             <th scope="col">#</th>
                             <th scope="col">Naam</th>
+                            <th scope="col">Type (SQL / NoSQL)</th>
                             <th scope="col">Documentatie & support</th>
                             <th scope="col">Voordelen t.o.v. anderen</th>
                             <th scope="col">Nadelen t.o.v. anderen</th>
@@ -41,18 +42,22 @@
                         </tr>
                         </thead>
                         <tbody class="table-group-divider">
+                        <!-- 1 -->
                         <tr>
                             <th scope="row">1</th>
-                            <td>MySQL en varianten zoals (MariaDB)</td>
+                            <td>MySQL / MariaDB</td>
+                            <td>SQL</td>
                             <td>Zeer goed – Zeer veel documentatie en tutorials, groot ecosysteem</td>
                             <td>Snel bij veel reads, breed ondersteund, eenvoudig te gebruiken</td>
                             <td>Minder flexibel dan PostgreSQL voor complexe queries</td>
                             <td>Grote en middelgrote projecten – Goede keuze als performance en eenvoud belangrijker zijn dan complexe relaties</td>
                             <td>Gemiddeld – Relatief eenvoudig op te zetten, maar tuning vereist voor prestaties</td>
                         </tr>
+                        <!-- 2 -->
                         <tr>
                             <th scope="row">2</th>
                             <td>PostgreSQL</td>
+                            <td>SQL</td>
                             <td>Zeer goed – Uitgebreide documentatie, veel praktijkvoorbeelden en tutorials, sterke
                                 community support
                             </td>
@@ -60,16 +65,17 @@
                             </td>
                             <td>Zwaarder dan SQLite, configuratie kan complexer zijn</td>
                             <td>Grote en complexe projecten – Ideaal voor applicaties met veel data, complexe relaties
-                                en
-                                schaalbaarheid nodig
+                                en schaalbaarheid nodig
                             </td>
                             <td>Moeilijker – Vereist setup met gebruikers, rechten en configuratiebestanden, maar goed
                                 gedocumenteerd
                             </td>
                         </tr>
+                        <!-- 3 -->
                         <tr>
                             <th scope="row">3</th>
                             <td>SQLite</td>
+                            <td>SQL</td>
                             <td>Goed – Basisdocumentatie en veel tutorials beschikbaar
                             </td>
                             <td>Lichtgewicht, eenvoudig te integreren, geen aparte server nodig
@@ -80,9 +86,11 @@
                             <td>Zeer eenvoudig – Geen serverinstallatie, slechts een bestand nodig
                             </td>
                         </tr>
+                        <!-- 4 -->
                         <tr>
                             <th scope="row">4</th>
                             <td>MongoDB</td>
+                            <td>NoSQL</td>
                             <td>Goed – Uitgebreide documentatie, veel voorbeelden, actieve community
                             </td>
                             <td>Flexibel schema, makkelijk schaalbaar voor grote datasets
@@ -93,11 +101,920 @@
                             <td>Gemiddeld – Snelle setup, maar tuning vereist voor optimalisatie
                             </td>
                         </tr>
+                        <!-- 5 -->
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>SurrealDB</td>
+                            <td>Hybrid (SQL / NoSQL)</td>
+                            <td>Redelijk – Documentatie aanwezig, maar minder praktijkvoorbeelden en tutorials
+                            </td>
+                            <td>Moderne database, Rust-native, ondersteunt relationele én NoSQL-modellen
+                            </td>
+                            <td>Nog niet volwassen, beperkte community</td>
+                            <td>Experimentele en middelgrote projecten – Interessant voor cutting-edge applicaties, maar nog niet de standaard
+                            </td>
+                            <td>Eenvoudig – Snelle setup, maar documentatie is minder uitgebreid
+                            </td>
+                        </tr>
+                        <!-- 6 -->
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Redis</td>
+                            <td>NoSQL</td>
+                            <td>Goed – Basisdocumentatie, voldoende tutorials
+                            </td>
+                            <td>Zeer snelle key-value store, ideaal voor caching en real-time toepassingen
+                            </td>
+                            <td>Niet bedoeld voor persistente opslag, minder geschikt voor complexe data</td>
+                            <td>Caching en snelle datatoegang – Perfect voor sessiebeheer, queues en snelle lookups
+                            </td>
+                            <td>Eenvoudig – Snel op te zetten, maar vereist configuratie voor persistente opslag
+                            </td>
+                        </tr>
+                        <!-- 7 -->
+                        <tr>
+                            <th scope="row">7</th>
+                            <td>CouchDB</td>
+                            <td>NoSQL</td>
+                            <td>Redelijk – Basisdocumentatie en API-referenties, minder tutorials
+                            </td>
+                            <td>Gedistribueerd en schaalbaar, eenvoudig te repliceren
+                            </td>
+                            <td>Langzamer bij grote queries, minder geschikt voor traditionele relationele data</td>
+                            <td>Gedecentraliseerde apps – Goed voor offline-first toepassingen en mobiele synchronisatie
+                            </td>
+                            <td>Gemiddeld – Setup vereist replicatieconfiguratie, maar basisgebruik is eenvoudig
+                            </td>
+                        </tr>
+                        <!-- 8 -->
+                        <tr>
+                            <th scope="row">8</th>
+                            <td>Firebase</td>
+                            <td>NoSQL</td>
+                            <td>Zeer goed – Uitgebreide officiële docs, talrijke tutorials, grote community door Google</td>
+                            <td>Real-time database, geïntegreerde auth, serverless functions en hosting</td>
+                            <td>Vendor lock-in, minder geschikt voor relationele data en complexe queries</td>
+                            <td>Realtime apps, prototypes, kleine tot middelgrote projecten – snelle ontwikkeling zonder eigen server</td>
+                            <td>Zeer eenvoudig – Setup via Google Cloud console, bijna plug-and-play</td>
+                        </tr>
+                        <!-- 9 -->
+                        <tr>
+                            <th scope="row">9</th>
+                            <td>Supabase</td>
+                            <td>SQL</td>
+                            <td>Goed – Steeds groter wordende documentatie, open-source, actieve community</td>
+                            <td>Open-source alternatief voor Firebase, draait op PostgreSQL, eenvoudig te self-hosten</td>
+                            <td>Nog jonger dan Firebase, community en tooling minder uitgebreid, vooral focus op JS/TypeScript</td>
+                            <td>Kleine tot middelgrote projecten – ideaal als je PostgreSQL en open source wilt of later on-premise hosting</td>
+                            <td>Gemiddeld – Cloud-variant makkelijk in te stellen, self-hosting vergt wel wat Postgres-kennis</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h4>🌐 Web frameworks/platforms</h4>
+                <div class="table-responsive">
+                    <table class="table table-striped table-hover pinned-table">
+                        <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Naam</th>
+                            <th scope="col">Gebaseerd op</th>
+                            <th scope="col">Documentatie & support</th>
+                            <th scope="col">Voordelen t.o.v. anderen</th>
+                            <th scope="col">Nadelen t.o.v. anderen</th>
+                            <th scope="col">Gebruikscases</th>
+                            <th scope="col">Configuratie</th>
+                        </tr>
+                        </thead>
+                        <tbody class="table-group-divider">
+                        <!-- 1: React -->
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>React</td>
+                            <td>JavaScript, component-based</td>
+                            <td>
+                                Zeer goed – Grootste community,<br />
+                                uitgebreide documentatie,<br />
+                                ontwikkeld door Meta (Facebook)
+                            </td>
+                            <td>
+                                • Zeer groot ecosysteem<br />
+                                • Virtual DOM voor performance<br />
+                                • Flexibele architectuur
+                            </td>
+                            <td>
+                                • Steile leercurve (hooks & patterns)<br />
+                                • Veel boilerplate en keuzes (routing, state)
+                            </td>
+                            <td>
+                                Kleine tot grote projecten,<br />
+                                veel enterprise apps
+                            </td>
+                            <td>
+                                Eenvoudig via <code>create-react-app</code> of Vite,<br />
+                                maar veel eigen keuzes
+                            </td>
+                        </tr>
+                        <!-- 2: Next.js -->
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Next.js</td>
+                            <td>React (Server-Side Rendering)</td>
+                            <td>
+                                Zeer goed – Uitgebreide docs,<br />
+                                ondersteund door Vercel,<br />
+                                actieve community
+                            </td>
+                            <td>
+                                • SSR/SSG out-of-the-box<br />
+                                • Goede performance en SEO<br />
+                                • Best practices geïntegreerd
+                            </td>
+                            <td>
+                                • Gebonden aan React<br />
+                                • Kan complex worden bij grote apps
+                            </td>
+                            <td>
+                                Grote en middelgrote projecten,<br />
+                                content/SEO-gevoelige sites
+                            </td>
+                            <td>
+                                Redelijk eenvoudig via <code>create-next-app</code>,<br />
+                                opinionated structuur
+                            </td>
+                        </tr>
+                        <!-- 3: Vue.js -->
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Vue.js</td>
+                            <td>JavaScript, component-based (reactive)</td>
+                            <td>
+                                Zeer goed – Duidelijke docs,<br />
+                                grote community,<br />
+                                vooral in Azië/Europa
+                            </td>
+                            <td>
+                                • Eenvoudig te leren<br />
+                                • “Single File Components”<br />
+                                • Balans tussen flexibiliteit en structuur
+                            </td>
+                            <td>
+                                • Kleiner ecosysteem dan React<br />
+                                • Minder geschikt voor zeer grote enterprise-projecten
+                            </td>
+                            <td>
+                                Kleine tot middelgrote projecten,<br />
+                                snelle prototyping
+                            </td>
+                            <td>
+                                Eenvoudig met <code>create-vue</code> CLI<br />
+                                of Vite (Vue template)
+                            </td>
+                        </tr>
+                        <!-- 4: Nuxt.js -->
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Nuxt.js</td>
+                            <td>Vue.js (Server-Side Rendering)</td>
+                            <td>
+                                Goed – Actief ontwikkelteam,<br />
+                                veel plugins en modules
+                            </td>
+                            <td>
+                                • Automatische routing<br />
+                                • SEO-vriendelijk (SSR/SSG)<br />
+                                • Gemakkelijk te configureren
+                            </td>
+                            <td>
+                                • Sterk gebonden aan Vue<br />
+                                • Documentatie soms verouderd door snelle updates
+                            </td>
+                            <td>
+                                Content-gedreven sites,<br />
+                                middelgrote Vue-projecten
+                            </td>
+                            <td>
+                                Makkelijk via <code>npx create-nuxt-app</code>,<br />
+                                opinionated mapstructuur
+                            </td>
+                        </tr>
+                        <!-- 5: Angular -->
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Angular</td>
+                            <td>TypeScript, component-based (Google)</td>
+                            <td>
+                                Goed – Officiële docs,<br />
+                                veel enterprise gebruik,<br />
+                                Google support
+                            </td>
+                            <td>
+                                • Zeer gestructureerd<br />
+                                • Sterke CLI<br />
+                                • Out-of-the-box oplossingen
+                            </td>
+                            <td>
+                                • Steile leercurve, verbose<br />
+                                • Grotere bundle size
+                            </td>
+                            <td>
+                                Grote enterprise projecten,<br />
+                                teams die vaste structuur willen
+                            </td>
+                            <td>
+                                Gemiddeld – Angular CLI biedt startpunt,<br />
+                                projectstructuur is wel uitgebreid
+                            </td>
+                        </tr>
+                        <!-- 6: Svelte -->
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Svelte</td>
+                            <td>Compiler-based (JS/TS)</td>
+                            <td>
+                                Goed – Duidelijke docs,<br />
+                                groeiende community
+                            </td>
+                            <td>
+                                • Zeer kleine bundle size<br />
+                                • Snelle performance<br />
+                                • Minder boilerplate
+                            </td>
+                            <td>
+                                • Kleiner ecosysteem<br />
+                                • Minder enterprise adoptie
+                            </td>
+                            <td>
+                                Kleine tot middelgrote projecten,<br />
+                                performance-gevoelige apps
+                            </td>
+                            <td>
+                                Eenvoudig met <code>npx degit sveltejs/template</code><br />
+                                of SvelteKit
+                            </td>
+                        </tr>
+                        <!-- 7: Astro -->
+                        <tr>
+                            <th scope="row">7</th>
+                            <td>Astro</td>
+                            <td>Framework-on-top (Partial Hydration)</td>
+                            <td>
+                                Redelijk – Documentatie groeit,<br />
+                                actieve community
+                            </td>
+                            <td>
+                                • Maakt statische sites met minimale JS<br />
+                                • Kan React/Vue/Svelte etc. combineren
+                            </td>
+                            <td>
+                                • Nog relatief jong<br />
+                                • Minder geschikt voor zeer dynamische UIs
+                            </td>
+                            <td>
+                                Content-gedreven websites,<br />
+                                blogs, documentatiesites
+                            </td>
+                            <td>
+                                Gemakkelijk via <code>npm create astro@latest</code><br />
+                                weinig configuratie nodig
+                            </td>
+                        </tr>
+                        <!-- 8: Ember.js -->
+                        <tr>
+                            <th scope="row">8</th>
+                            <td>Ember.js</td>
+                            <td>MVC-achtig (inspired by Rails)</td>
+                            <td>
+                                Redelijk – Uitgebreide “guides”,<br />
+                                community is kleiner geworden
+                            </td>
+                            <td>
+                                • Sterke conventies<br />
+                                • Stabiel en backwards compatibel
+                            </td>
+                            <td>
+                                • Aan de zware kant<br />
+                                • Minder populair dan Angular/React/Vue
+                            </td>
+                            <td>
+                                Grotere apps die “convention over configuration” willen
+                            </td>
+                            <td>
+                                Gemiddeld – Ember CLI,<br />
+                                maar veel conventies om te leren
+                            </td>
+                        </tr>
+                        <!-- 9: Gatsby -->
+                        <tr>
+                            <th scope="row">9</th>
+                            <td>Gatsby</td>
+                            <td>React (Static Site Generator)</td>
+                            <td>
+                                Goed – Veel tutorials,<br />
+                                actief plugin-ecosysteem
+                            </td>
+                            <td>
+                                • Geschikt voor statische sites<br />
+                                • Veel data/plugins (CMS, Markdown)
+                            </td>
+                            <td>
+                                • Kan traag worden bij zeer grote sites (lange builds)<br />
+                                • Gebonden aan React
+                            </td>
+                            <td>
+                                Blogs, marketing sites, documentatiesites,<br />
+                                Jamstack-architectuur
+                            </td>
+                            <td>
+                                Eenvoudig via <code>gatsby new</code>,<br />
+                                plugins vergen configuratie
+                            </td>
+                        </tr>
+                        <!-- 10: SolidJS -->
+                        <tr>
+                            <th scope="row">10</th>
+                            <td>SolidJS</td>
+                            <td>React-achtig (compile-time reactivity)</td>
+                            <td>
+                                Redelijk – Groeiende community,<br />
+                                docs in ontwikkeling
+                            </td>
+                            <td>
+                                • Extreem snelle performance<br />
+                                • React-achtige API, geen Virtual DOM overhead
+                            </td>
+                            <td>
+                                • Klein ecosysteem<br />
+                                • Minder tooling/tutorials
+                            </td>
+                            <td>
+                                Middelgrote projecten,<br />
+                                performance-gedreven apps
+                            </td>
+                            <td>
+                                Makkelijk met <code>npx degit solidjs/templates/js</code><br />
+                                SolidStart voor SSR in ontwikkeling
+                            </td>
+                        </tr>
+                        <!-- 11: Preact -->
+                        <tr>
+                            <th scope="row">11</th>
+                            <td>Preact</td>
+                            <td>Lichtgewicht React-alternatief</td>
+                            <td>
+                                Goed – Korte docs,<br />
+                                community deels overlappend met React
+                            </td>
+                            <td>
+                                • Extreem kleine bundle<br />
+                                • Compatibel met React-achtige syntax
+                            </td>
+                            <td>
+                                • Niet alle React-features (Context, etc.) beschikbaar<br />
+                                • Kleiner ecosysteem
+                            </td>
+                            <td>
+                                Kleine tot middelgrote projecten,<br />
+                                waar elke kilobyte telt
+                            </td>
+                            <td>
+                                Eenvoudig via <code>preact-cli</code> of Vite plugin,<br />
+                                kan React-code hergebruiken
+                            </td>
+                        </tr>
+                        <!-- 12: Eleventy -->
+                        <tr>
+                            <th scope="row">12</th>
+                            <td>Eleventy</td>
+                            <td>Static Site Generator (JavaScript)</td>
+                            <td>
+                                Goed – Heldere docs,<br />
+                                groeiende populariteit
+                            </td>
+                            <td>
+                                • Geen client framework nodig,<br />
+                                • Werkt met Markdown, datafiles
+                            </td>
+                            <td>
+                                • Beperkt dynamisch, clientside code zelf regelen<br />
+                                • Niet voor full-blown SPAs
+                            </td>
+                            <td>
+                                Blogs, documentatie, statische sites<br />
+                                Jamstack
+                            </td>
+                            <td>
+                                Eenvoudig: <code>npm init eleventy</code>,<br />
+                                configuratie via .eleventy.js
+                            </td>
+                        </tr>
+                        <!-- 13: RedwoodJS -->
+                        <tr>
+                            <th scope="row">13</th>
+                            <td>RedwoodJS</td>
+                            <td>React + GraphQL (Full-stack)</td>
+                            <td>
+                                Redelijk – Actieve core team,<br />
+                                maar nog in ontwikkeling
+                            </td>
+                            <td>
+                                • Full-stack (API + web) met React/GraphQL<br />
+                                • Convention-over-configuration
+                            </td>
+                            <td>
+                                • Sterke focus op Jamstack + GraphQL<br />
+                                • Minder bekend, in groei
+                            </td>
+                            <td>
+                                Snel prototypen van SaaS-apps,<br />
+                                devs die een “Rails voor React” willen
+                            </td>
+                            <td>
+                                CLI-gedreven setup: <code>yarn create redwood-app</code>,<br />
+                                menustructuur is opinionated
+                            </td>
+                        </tr>
+                        <!-- 14: Qwik -->
+                        <tr>
+                            <th scope="row">14</th>
+                            <td>Qwik</td>
+                            <td>JS framework met Resumability (part. hydration)</td>
+                            <td>
+                                Redelijk – Nieuw concept,<br />
+                                docs in groei
+                            </td>
+                            <td>
+                                • Zeer snelle laadtijden,<br />
+                                • Minimaal JavaScript in de browser
+                            </td>
+                            <td>
+                                • Zeer nieuw,<br />
+                                • Ecosysteem nog klein
+                            </td>
+                            <td>
+                                Performance-gedreven apps,<br />
+                                proof-of-concept en cutting-edge
+                            </td>
+                            <td>
+                                Enigszins experimenteel,<br />
+                                <code>npm create qwik</code> voor scaffold
+                            </td>
+                        </tr>
+                        <!-- 15: Mithril.js -->
+                        <tr>
+                            <th scope="row">15</th>
+                            <td>Mithril</td>
+                            <td>JavaScript, minimalistisch</td>
+                            <td>
+                                Redelijk – Kleiner team,<br />
+                                duidelijke maar beknopte docs
+                            </td>
+                            <td>
+                                • Zeer klein en snel<br />
+                                • Simpele API
+                            </td>
+                            <td>
+                                • Beperkt ecosysteem,<br />
+                                • Niet zo mainstream als React/Vue
+                            </td>
+                            <td>
+                                Kleine tot middelgrote SPAs<br />
+                                waar performance belangrijk is
+                            </td>
+                            <td>
+                                Zeer eenvoudig – alleen <code>mithril.js</code> importeren,<br />
+                                geen officiële CLI
+                            </td>
+                        </tr>
+                        <!-- 16: Lit (voorheen Polymer) -->
+                        <tr>
+                            <th scope="row">16</th>
+                            <td>Lit</td>
+                            <td>Web Components (Google)</td>
+                            <td>
+                                Goed – Google-ondersteund,<br />
+                                duidelijke docs
+                            </td>
+                            <td>
+                                • Native Web Components<br />
+                                • Zeer licht en flexibel
+                            </td>
+                            <td>
+                                • Niet zo populair als React/Vue<br />
+                                • Minder opiniated, je moet meer zelf kiezen
+                            </td>
+                            <td>
+                                Kleine tot middelgrote projecten,<br />
+                                herbruikbare web componenten
+                            </td>
+                            <td>
+                                Eenvoudig – alleen <code>npm i lit</code> en gebruik<br />
+                                tooling is vrij minimaal
+                            </td>
+                        </tr>
+                        <!-- 17: Stencil -->
+                        <tr>
+                            <th scope="row">17</th>
+                            <td>Stencil</td>
+                            <td>Compiler voor Web Components (Ionic-team)</td>
+                            <td>
+                                Redelijk – Ionic-ecosysteem,<br />
+                                docs zijn goed maar minder bekend
+                            </td>
+                            <td>
+                                • Gebruikt TypeScript<br />
+                                • Bouwt web components voor elk framework
+                            </td>
+                            <td>
+                                • Kleiner ecosysteem dan React/Vue<br />
+                                • Specifiek gericht op web components
+                            </td>
+                            <td>
+                                Gebruikers die framework-onafhankelijke<br />
+                                UI components willen
+                            </td>
+                            <td>
+                                Via <code>npm init stencil</code>,<br />
+                                config in stencil.config.ts
+                            </td>
+                        </tr>
+                        <!-- 18: Aurelia -->
+                        <tr>
+                            <th scope="row">18</th>
+                            <td>Aurelia</td>
+                            <td>JavaScript/TypeScript, MVVM</td>
+                            <td>
+                                Redelijk – Enthousiast team,<br />
+                                maar kleiner dan Angular/React
+                            </td>
+                            <td>
+                                • Convention-over-configuration,<br />
+                                • Schone, bindable views
+                            </td>
+                            <td>
+                                • Weinig adoptie,<br />
+                                • Klein ecosysteem
+                            </td>
+                            <td>
+                                Middelgrote projecten,<br />
+                                devs die iets als Angular willen<br />
+                                maar lichter
+                            </td>
+                            <td>
+                                CLI: <code>npx make aurelia</code>,<br />
+                                nog niet zo gestandaardiseerd
+                            </td>
+                        </tr>
+                        <!-- 19: Alpine.js -->
+                        <tr>
+                            <th scope="row">19</th>
+                            <td>Alpine.js</td>
+                            <td>Lightweight, “Tailwind of JavaScript”</td>
+                            <td>
+                                Redelijk – Simpele docs,<br />
+                                kleine maar actieve community
+                            </td>
+                            <td>
+                                • Zeer klein, direct inlined in HTML<br />
+                                • Declaratief à la Vue, maar eenvoudiger
+                            </td>
+                            <td>
+                                • Beperkt in functionaliteit,<br />
+                                • Niet geschikt voor grote SPAs
+                            </td>
+                            <td>
+                                Kleine interactieve snippets,<br />
+                                progressive enhancement
+                            </td>
+                            <td>
+                                Zeer eenvoudig –<br />
+                                <code>&lt;script src="..."&gt;&lt;/script&gt;</code>
+                            </td>
+                        </tr>
+                        <!-- 20: Marko -->
+                        <tr>
+                            <th scope="row">20</th>
+                            <td>Marko</td>
+                            <td>Server-side rendering by eBay</td>
+                            <td>
+                                Redelijk – eBay-ondersteund,<br />
+                                docs redelijk uitgebreid
+                            </td>
+                            <td>
+                                • Zeer snelle SSR<br />
+                                • Kleine runtime, streaming
+                            </td>
+                            <td>
+                                • Kleiner ecosysteem,<br />
+                                • Minder bekend dan React/Vue
+                            </td>
+                            <td>
+                                E-commerce sites, SSR-gedreven<br />
+                                scenario’s waar performance key is
+                            </td>
+                            <td>
+                                NPM-module <code>marko</code>,<br />
+                                CLI support en bundlerintegratie
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h4>⚡ Rust frameworks</h4>
+                <div class="table-responsive">
+                    <table class="table table-striped table-hover pinned-table">
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Naam</th>
+                            <th>Type</th>
+                            <th>Cross-Platform?</th>
+                            <th>Documentatie &amp; Support</th>
+                            <th>Voordelen</th>
+                            <th>Nadelen</th>
+                            <th>Gebruikscases</th>
+                            <th>Configuratie</th>
+                        </tr>
+                        </thead>
+                        <tbody class="table-group-divider">
+                        <!-- 1: Actix Web -->
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Actix Web</td>
+                            <td>Web backend (HTTP-server)</td>
+                            <td>Ja, draait op Windows, Linux, macOS</td>
+                            <td>
+                                Zeer goed – Grote community,<br />
+                                veel voorbeelden
+                            </td>
+                            <td>
+                                • Extreem snelle performance<br />
+                                • Actor-model, async-first
+                            </td>
+                            <td>
+                                • API kan complex lijken voor beginners<br />
+                                • Concurrency modellen vrij geavanceerd
+                            </td>
+                            <td>
+                                Hoge performance web-API’s,<br />
+                                microservices, real-time servers
+                            </td>
+                            <td>
+                                Gemiddeld – Cargo dependencies,<br />
+                                <code>[dependencies]</code> in Cargo.toml,<br />
+                                config via Rust code
+                            </td>
+                        </tr>
+                        <!-- 2: Rocket -->
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Rocket</td>
+                            <td>Web backend (HTTP-server)</td>
+                            <td>Ja, draait op Windows, Linux, macOS</td>
+                            <td>
+                                Zeer goed – Heldere handleiding,<br />
+                                veel community-resources
+                            </td>
+                            <td>
+                                • Erg gebruiksvriendelijk,<br />
+                                • Macros vereenvoudigen routing
+                            </td>
+                            <td>
+                                • Async-ondersteuning was lang in beta<br />
+                                • Minder “out-of-the-box” performance dan Actix
+                            </td>
+                            <td>
+                                RESTful APIs, prototyping,<br />
+                                kleinere tot middelgrote webapps
+                            </td>
+                            <td>
+                                Makkelijk – <code>rocket = "..."</code> in Cargo.toml,<br />
+                                configuratie in Rocket.toml of code
+                            </td>
+                        </tr>
+                        <!-- 3: Axum -->
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Axum</td>
+                            <td>Web backend (HTTP-server)</td>
+                            <td>Ja, draait op Windows, Linux, macOS</td>
+                            <td>
+                                Goed – Nieuwe maar groeiende docs,<br />
+                                Tokio-gebaseerd, actieve community
+                            </td>
+                            <td>
+                                • Modern, async-first<br />
+                                • Eenvoudige router en middleware
+                            </td>
+                            <td>
+                                • Nog minder “battle-tested” dan Actix<br />
+                                • Zelf veel structuren opbouwen
+                            </td>
+                            <td>
+                                Microservices, REST/GraphQL APIs,<br />
+                                apps die moderne async stack willen
+                            </td>
+                            <td>
+                                Eenvoudig – <code>axum = "..."</code>,<br />
+                                configuratie hoofdzakelijk in code
+                            </td>
+                        </tr>
+                        <!-- 4: Warp -->
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Warp</td>
+                            <td>Web backend (HTTP-server)</td>
+                            <td>Ja, draait op Windows, Linux, macOS</td>
+                            <td>
+                                Goed – Redelijke docs,<br />
+                                community groeit
+                            </td>
+                            <td>
+                                • Functionele stijl routing<br />
+                                • Lightweight en async
+                            </td>
+                            <td>
+                                • Minder conventies,<br />
+                                • Kan wennen zijn (functionele chaining)
+                            </td>
+                            <td>
+                                Kleine tot middelgrote APIs,<br />
+                                real-time servers (WebSockets)
+                            </td>
+                            <td>
+                                Simpel – Install via Cargo,<br />
+                                hoofdzakelijk code-based config
+                            </td>
+                        </tr>
+                        <!-- 5: Tauri -->
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Tauri</td>
+                            <td>Desktop (Electron-alternatief)</td>
+                            <td>Ja, Windows, Linux, macOS</td>
+                            <td>
+                                Goed – Actieve community,<br />
+                                duidelijke docs
+                            </td>
+                            <td>
+                                • Veel lichter dan Electron<br />
+                                • Biedt native API’s en lage RAM footprint
+                            </td>
+                            <td>
+                                • Nog minder plugins/bibliotheken dan Electron<br />
+                                • WebView-implementatie verschilt per OS
+                            </td>
+                            <td>
+                                Desktop-apps die webtechnologie gebruiken<br />
+                                (HTML/CSS/JS of WASM in Rust)
+                            </td>
+                            <td>
+                                Eenvoudig – <code>tauri init</code>,<br />
+                                config in <code>tauri.conf.json</code>
+                            </td>
+                        </tr>
+                        <!-- 6: Yew -->
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Yew</td>
+                            <td>Web frontend (WASM)</td>
+                            <td>Ja (WASM in elke moderne browser)</td>
+                            <td>
+                                Redelijk – Groeiende docs,<br />
+                                community nog klein
+                            </td>
+                            <td>
+                                • React-achtig in Rust<br />
+                                • Schrijft clientside code in WASM
+                            </td>
+                            <td>
+                                • Geen SSR out-of-the-box<br />
+                                • Kleiner ecosysteem vergeleken met JavaScript
+                            </td>
+                            <td>
+                                Single Page Apps in Rust,<br />
+                                client-heavy web UIs
+                            </td>
+                            <td>
+                                Gemiddeld – <code>wasm-pack</code> of Trunk,<br />
+                                code in Rust + cargo
+                            </td>
+                        </tr>
+                        <!-- 7: Leptos -->
+                        <tr>
+                            <th scope="row">7</th>
+                            <td>Leptos</td>
+                            <td>Web frontend & SSR (WASM + server)</td>
+                            <td>Ja (WASM + servercomponent), Linux/Win/macOS</td>
+                            <td>
+                                Redelijk – Docs in opkomst,<br />
+                                actief ontwikkeld
+                            </td>
+                            <td>
+                                • Reactieve UI in Rust<br />
+                                • SSR + client-hydration voor SEO
+                            </td>
+                            <td>
+                                • Nog jong framework<br />
+                                • Kleinere community dan Yew
+                            </td>
+                            <td>
+                                Full-stack Rust webapps,<br />
+                                SEO-gevoelige en dynamische sites
+                            </td>
+                            <td>
+                                Gemiddeld – CLI’s als <code>cargo leptos</code>,<br />
+                                server + client code splitsing
+                            </td>
+                        </tr>
+                        <!-- 8: Dioxus -->
+                        <tr>
+                            <th scope="row">8</th>
+                            <td>Dioxus</td>
+                            <td>Multi-platform (Web, Desktop, Mobile, TUI)</td>
+                            <td>Ja, compileert naar WASM, desktop, mobiel</td>
+                            <td>
+                                Goed – Duidelijke docs,<br />
+                                actieve core devs
+                            </td>
+                            <td>
+                                • React-achtige syntax in Rust<br />
+                                • Kan draaien op web, desktop (Tauri), mobile en zelfs terminal
+                            </td>
+                            <td>
+                                • Relatief nieuw,<br />
+                                • Klein ecosysteem
+                            </td>
+                            <td>
+                                Cross-platform UIs in Rust,<br />
+                                1 codebase voor web, desktop, TUI
+                            </td>
+                            <td>
+                                Gemiddeld – <code>dioxus-cli</code> kan scaffold maken,<br />
+                                meerdere targets configureren
+                            </td>
+                        </tr>
+                        <!-- 9: Iced -->
+                        <tr>
+                            <th scope="row">9</th>
+                            <td>Iced</td>
+                            <td>Desktop GUI (ook WebAssembly-ondersteuning)</td>
+                            <td>Ja, Windows, Linux, macOS, en WASM</td>
+                            <td>
+                                Goed – Duidelijke docs,<br />
+                                actieve ontwikkeling
+                            </td>
+                            <td>
+                                • Declaratief GUI framework in Rust<br />
+                                • Relatief eenvoudig op te zetten
+                            </td>
+                            <td>
+                                • Mist uitgebreide widgetset,<br />
+                                • Nog in groei
+                            </td>
+                            <td>
+                                Cross-platform desktop UIs,<br />
+                                eenvoudigere GUI apps
+                            </td>
+                            <td>
+                                Eenvoudig – <code>iced = "..."</code> in Cargo.toml,<br />
+                                configuratie in Rust code
+                            </td>
+                        </tr>
+                        <!-- 10: Slint -->
+                        <tr>
+                            <th scope="row">10</th>
+                            <td>Slint</td>
+                            <td>Desktop/Embedded UI (declaratief)</td>
+                            <td>Ja, Windows, Linux, macOS, embedded</td>
+                            <td>
+                                Redelijk – Basisdocumentatie,<br />
+                                community groeit
+                            </td>
+                            <td>
+                                • Declaratieve UI in aparte .slint files<br />
+                                • Lichtgewicht, ook voor embedded
+                            </td>
+                            <td>
+                                • Minder bekend dan Iced<br />
+                                • Beperkt aantal widgets
+                            </td>
+                            <td>
+                                Embedded toepassingen,<br />
+                                cross-platform native-feel UIs
+                            </td>
+                            <td>
+                                Gemiddeld – <code>slint = "..."</code> in Cargo.toml,<br />
+                                .slint UI-bestanden en Rust code
+                            </td>
+                        </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
-            <div class="col-12 col-xxl-3 ms-auto d-none d-xxl-block">
+            <div class="col-12 col-xxl-2 ms-auto d-none d-xxl-block">
                 <div class="sticky-sidebar">
                     <div class="sidebar-container">
                         <strong>Dit onderzoek wordt uitgevoerd door:</strong>
@@ -108,20 +1025,5 @@
         </div>
     </div>
 </main>
-
-<script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-<script src="../node_modules/marked/marked.min.js"></script>
-<script src="../src/main.js"></script>
-<script>
-    fetch('./README.md')
-        .then(response => response.text())
-        .then(markdown => {
-            document.querySelector('#markdown').innerHTML = marked.parse(markdown);
-        })
-        .catch(error => {
-            console.error('Error loading README.md:', error);
-            document.querySelector('#markdown').innerHTML = '<p>Error loading content.</p>';
-        });
-</script>
 </body>
 </html>

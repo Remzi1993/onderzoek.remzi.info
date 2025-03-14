@@ -1,9 +1,10 @@
-/* Your existing styles */
+/* Your existing hover styles */
 .table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
   background-color: rgb(108, 117, 125);
   color: white;
 }
 
+/* Sticky sidebar */
 @media (min-width: 992px) {
   .sticky-sidebar {
     position: sticky;
@@ -17,95 +18,79 @@
   position: relative;
 }
 
-/* Background container for shadow and color */
-#pinned-header-background {
+/* Sticky header container */
+.sticky-header-container {
   background-color: #fff;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-}
-
-/* Container wrapper for positioning */
-#pinned-header-container-wrapper {
-  z-index: 999;
-}
-
-/* Inner scrollable container */
-#pinned-header-scroll-container {
+  overflow-x: auto;
+  overflow-y: hidden;
   -webkit-overflow-scrolling: touch; /* For smoother scrolling on iOS */
-  background-color: transparent; /* Important to prevent background color in padding areas */
+  max-width: 100%;
+  z-index: 1000;
+  transition: box-shadow 0.2s ease-in-out;
 }
 
-/* Desktop specific styles */
+/* Ensure sticky header doesn't show scrollbar on desktop */
 @media (min-width: 992px) {
-  #pinned-header-scroll-container {
-    overflow-x: hidden !important; /* Force hide scrollbar on desktop */
+  .sticky-header-container {
+    overflow-x: hidden;
   }
 }
 
-/* Mobile specific styles */
-@media (max-width: 991px) {
-  #pinned-header-scroll-container {
-    overflow-x: auto; /* Enable scrollbar on mobile */
-  }
-
-  /* Remove overflow container margin */
-  #pinned-header-scroll-container::-webkit-scrollbar {
-    height: 10px;
-  }
+/* Style the scrollbar for better visibility on mobile */
+.sticky-header-container::-webkit-scrollbar {
+  height: 6px;
 }
 
-/* Pinned header table */
-.pinned-header {
-  display: none; /* Hidden until needed */
-  table-layout: auto;
-  border-collapse: collapse;
-  margin: 0 !important;
-  width: 100%;
+.sticky-header-container::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
 }
 
-/* Allow header text to wrap, like the original header */
-.pinned-header th {
-  white-space: normal; /* Allow text to wrap */
-  word-wrap: break-word; /* Break words to prevent overflow */
-  hyphens: auto; /* Enable hyphenation for better word breaks */
-  background-color: #f8f9fa; /* Match Bootstrap's default background */
-  border-bottom: 2px solid #dee2e6; /* Match Bootstrap's default border */
+.sticky-header-container::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Style the sticky header table */
+.sticky-header-table {
+  margin: 0;
+  border-bottom: 2px solid #dee2e6;
+}
+
+/* Style the header cells */
+.sticky-header-table th {
+  background-color: #f8f9fa;
+  border-bottom: 2px solid #dee2e6;
   padding: 0.75rem;
   vertical-align: middle;
-  overflow: visible; /* Allow content to be visible */
-  text-overflow: clip; /* Don't use ellipsis */
+  white-space: normal;
+  word-wrap: break-word;
+  hyphens: auto;
 }
 
-/* For striped tables */
-.table-striped.pinned-header th {
+/* Make sure header rows maintain proper height */
+.sticky-header-table thead tr {
+  height: auto;
+}
+
+/* Fix for Bootstrap stripped tables */
+.table-striped.sticky-header-table th {
   background-color: #f8f9fa;
 }
 
-/* Mobile specific styles */
-@media (max-width: 991px) {
-  #pinned-header-background {
-    width: 100% !important;
-  }
+/* Add transition for smooth appearance */
+.sticky-header-container {
+  transition: opacity 0.15s ease-in-out;
+}
 
-  #pinned-header-container-wrapper {
-    width: 100% !important;
-  }
+/* Responsive handling for table-responsive containers */
+.table-responsive {
+  position: relative;
+  z-index: 1;
+  overflow-x: auto;
+}
 
-  #pinned-header-scroll-container {
-    margin: 0 auto;
-    padding-left: calc(1.5rem * 0.5);
-    padding-right: calc(1.5rem * 0.5);
-  }
-
-  /* Remove any unexpected margins */
-  .pinned-header {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-  }
-
-  /* On very small screens, we might need nowrap */
-  @media (max-width: 575px) {
-    .pinned-header th {
-      white-space: nowrap;
-    }
-  }
+/* Fix for any potential z-index conflicts */
+.table-responsive, .sticky-header-container {
+  will-change: transform;
+  backface-visibility: hidden;
 }

@@ -20,9 +20,17 @@ En de volgende deelvragen:
 > 5. Hoe kunnen op basis van de knelpunten en eisen de beste technologieën worden geïmplementeerd om studenten optimaal te matchen met de mogelijkheden binnen de politie?
 
 ## Interviews
-Voor mijn stageonderzoek moet ik de stakeholders interviewen, zodat ik een degelijke stakeholderanalyse kan maken en de eisen en wensen van de stakeholders kan vaststellen voor de proof of concept (web)applicatie.
-Het is handig dat ik medewerkers van de politie kan interviewen die stageopdrachten en werkopdrachten hebben voor studenten wat zij belangrijk vinden bij het matchen met de studenten.
-Ook moet ik de studenten interviewen om te kijken wat zij belangrijk vinden bij het matchen met de politie.
+Voor mijn stageonderzoek moet ik de stakeholders interviewen en diegene die de applicatie gaan gebruiken:
+- Management van de politie en product owner om de eisen en wensen vast te stellen
+- Politiemedewerkers die de applicatie gaan gebruiken om stageopdrachten en werkopdrachten hebben voor studenten
+- Studenten die de applicatie gaan gebruiken
+
+Deze interviews zijn noodzakelijk voor mijn vooronderzoek, zodat ik rekening kan houden met de eisen en wensen van de stakeholders bij het ontwikkelen van de proof of concept (web)applicatie.
+Ook zijn deze interviews noodzakelijk voor mijn stageonderzoek, zodat ik bewijs kan leveren voor de antwoorden op de deelvragen en als bewijs kan tonen voor het voltooien van bepaalde beroepstaken.
+
+Het is handig dat ik daarbij medewerkers van de politie kan interviewen die stageopdrachten en werkopdrachten hebben voor studenten.
+Ook ga ik studenten interviewen om te kijken wat zij belangrijk vinden met betrekking tot de proof of concept (web)applicatie die ik ga ontwikkelen.
+
 
 ### Enquêtes
 - [Enquête voor politiemedewerkers](https://forms.gle/uXe8rbjSa1JoSgAR8)

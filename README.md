@@ -20,7 +20,7 @@ En de volgende deelvragen:
 > 5. Hoe kunnen op basis van de knelpunten en eisen de beste technologieën worden geïmplementeerd om studenten optimaal te matchen met de mogelijkheden binnen de politie?
 
 ## Interviews
-Voor mijn stageonderzoek moet ik de stakeholders interviewen en diegene die de applicatie gaan gebruiken:
+Voor mijn stageonderzoek moet ik de stakeholders interviewen en diegenen die de applicatie gaan gebruiken, dit zijn:
 - Management van de politie en product owner om de eisen en wensen vast te stellen
 - Politiemedewerkers die de applicatie gaan gebruiken om stageopdrachten en werkopdrachten hebben voor studenten
 - Studenten die de applicatie gaan gebruiken

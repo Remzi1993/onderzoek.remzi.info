@@ -21,8 +21,8 @@ En de volgende deelvragen:
 
 ## Interviews
 Voor mijn stageonderzoek moet ik de stakeholders interviewen en diegenen die de applicatie gaan gebruiken, namelijk:
-- Management van de politie en product owner om de eisen en wensen vast te stellen en eventuele later bij te stellen
-- Politiemedewerkers die de applicatie gaan gebruiken om stageopdrachten en werkopdrachten aan te maken en te beheren
+- Management van de politie en product owner om de eisen en wensen vast te stellen en eventueel later bij te stellen
+- Politiemedewerkers gaan het gebruiken om stageopdrachten en werkopdrachten aan te maken en te beheren
 - Studenten die de applicatie gaan gebruiken om stageopdrachten en werkopdrachten te vinden en te solliciteren
 
 Deze interviews zijn noodzakelijk voor mijn vooronderzoek, zodat ik rekening kan houden met de eisen en wensen van de stakeholders bij het ontwikkelen van de proof of concept (web)applicatie.
@@ -30,7 +30,6 @@ Ook zijn deze interviews noodzakelijk voor mijn stageonderzoek, zodat ik bewijs 
 
 Het is handig dat ik daarbij medewerkers van de politie kan interviewen die stageopdrachten en werkopdrachten hebben voor studenten.
 Ook ga ik studenten interviewen om te kijken wat zij belangrijk vinden met betrekking tot de proof of concept (web)applicatie die ik ga ontwikkelen.
-
 
 ### Enquêtes
 - [Enquête voor politiemedewerkers](https://forms.gle/uXe8rbjSa1JoSgAR8)

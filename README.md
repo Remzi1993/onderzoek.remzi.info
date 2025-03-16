@@ -26,8 +26,8 @@ Voor mijn stageonderzoek moet ik de stakeholders interviewen en diegenen die de 
 - Studenten gaan het gebruiken om stageopdrachten en werkopdrachten te vinden en daarop te solliciteren
 
 Deze interviews zijn noodzakelijk voor mijn vooronderzoek, zodat ik rekening kan houden met de eisen en wensen van de stakeholders bij het ontwikkelen van de proof of concept (web)applicatie.
-Ook zijn deze interviews noodzakelijk voor mijn stageonderzoek en stageporfolio, zodat ik dit in mijn stageonderzoek kan gebruiken en kan verwerken en als bewijs kan dienen in mijn stageporfolio voor het aantonen dat ik bepaalde beroepstaken heb voltooid.
-
+Ook zijn deze interviews noodzakelijk voor mijn stageonderzoek en stageporfolio, zodat ik dit in mijn stageonderzoek kan gebruiken.
+Het dient tevens als bewijs voor mijn stageprofolio dat ik bepaalde beroepstaken voldoende beheers.
 
 Het is handig dat ik daarbij medewerkers van de politie kan interviewen die stageopdrachten en werkopdrachten hebben voor studenten.
 Ook ga ik studenten interviewen om te kijken wat zij belangrijk vinden met betrekking tot de proof of concept (web)applicatie die ik ga ontwikkelen.

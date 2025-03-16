@@ -16,3 +16,12 @@ En de volgende deelvragen:
 > 3. Welke knelpunten ervaren studenten bij het solliciteren?
 > 4. Wat zijn de eisen die de politie en overheid stellen bij de technologieën die gebruikt mogen worden?
 > 5. Hoe kunnen op basis van de knelpunten en eisen de beste technologieën worden geïmplementeerd om studenten optimaal te matchen met de mogelijkheden binnen de politie?
+
+## Interviews
+Voor mijn stageonderzoek moet ik de stakeholders interviewen, zodat ik een degelijke stakeholderanalyse kan maken en de eisen en wensen van de stakeholders kan vaststellen voor de proof of concept (web)applicatie.
+Het is handig dat ik medewerkers van de politie kan interviewen die stageopdrachten en werkopdrachten hebben voor studenten wat zij belangrijk vinden bij het matchen met de studenten.
+Ook moet ik de studenten interviewen om te kijken wat zij belangrijk vinden bij het matchen met de politie.
+
+### Enquêtes
+- [Enquête voor politiemedewerkers](https://forms.gle/uXe8rbjSa1JoSgAR8)
+- [Enquête voor studenten](https://forms.gle/LLqPrJV2Sm4vBjEJ9)

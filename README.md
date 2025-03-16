@@ -2,7 +2,8 @@
 Mijn naam is Remzi Cavdar en ik doe een meeloopstage als softwareontwikkelaar bij de Politie. Ik moet een
 Proof of Concept webapplicatie ontwikkelen die studenten matcht met wat er binnen de politie beschikbaar is (denk aan stageopdrachten en werkopdrachten).
 
-Om dat te bewerkstelligen moet ik eerst een vooronderzoek doen om te kijken welke technologieën ik kan gebruiken en hoe ik dat ga ontwikkelen.
+Ik moet zelf de volledige softwarearchitectuur bedenken en opzetten, inclusief infrastructuur, backend, frontend en database. 
+Om dat te bewerkstelligen voer ik eerst een vooronderzoek uit om te bepalen welke technologieën en methodieken het meest geschikt zijn voor deze proof of concept.
 Ik moet voor de HvA ook onderzoek doen.
 Het vooronderzoek dat ik bij de politie doe, beantwoordt deels ook de vragen die ik moet beantwoorden voor het stageonderzoek.
 

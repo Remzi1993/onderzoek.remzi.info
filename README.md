@@ -29,9 +29,6 @@ Deze interviews zijn noodzakelijk voor mijn vooronderzoek, zodat ik rekening kan
 Ook zijn deze interviews noodzakelijk voor mijn stageonderzoek en stageporfolio, zodat ik dit in mijn stageonderzoek kan gebruiken.
 Het dient tevens als bewijs voor mijn stageprofolio dat ik bepaalde beroepstaken voldoende beheers.
 
-Het is handig dat ik daarbij medewerkers van de politie kan interviewen die stageopdrachten en werkopdrachten hebben voor studenten.
-Ook ga ik studenten interviewen om te kijken wat zij belangrijk vinden met betrekking tot de proof of concept (web)applicatie die ik ga ontwikkelen.
-
 ### Enquêtes
 - [Enquête voor politiemedewerkers](https://forms.gle/uXe8rbjSa1JoSgAR8)
 - [Enquête voor studenten](https://forms.gle/LLqPrJV2Sm4vBjEJ9)

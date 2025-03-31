@@ -1,0 +1,45 @@
+/* .vitepress/theme/custom.css */
+
+:root {
+  /* Police branding colors */
+  --vp-c-brand-1: #004682; /* Politie blauw */
+  --vp-c-brand-2: #1062B2; /* Politie blauw, lichter */
+  --vp-c-brand-3: #207CC4; /* Politie blauw, nog lichter */
+
+  /* Feature grid styling */
+  --vp-home-hero-name-color: var(--vp-c-brand-1);
+
+  /* Make hero image bigger */
+  --vp-home-hero-image-width: 100%;
+  --vp-home-hero-image-height: 100%;
+}
+
+.VPHero.has-image .image-container {
+  margin-top: -50px;
+}
+
+.VPHero.has-image .image-src {
+  max-width: 100% !important;
+  max-height: 100% !important;
+}
+
+@media (min-width: 1200px) {
+  /* Make hero image bigger */
+  .VPHero.has-image .image-container {
+    width: 85% !important;
+  }
+}
+
+@media (max-width: 960px) {
+  .VPHero.has-image .image-container {
+    width: 90% !important;
+    height: 400px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .VPHero.has-image .image-container {
+    width: 90% !important;
+    height: 300px !important;
+  }
+}

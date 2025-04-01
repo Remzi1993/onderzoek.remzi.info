@@ -10,7 +10,7 @@ hero:
     alt: Logo van de politie en HvA
   actions:
     - theme: brand
-      text: Meer documentatie
+      text: Meer informatie
       link: /informatie
 
 features:
@@ -30,7 +30,7 @@ features:
     title: Enquête voor politiemedewerkers
     details: In deze enquête hoor ik graag hoe het aanbieden van stage- en werkopdrachten binnen de politie verloopt. Zo kan ik de systemen en procedures beter begrijpen en verbeteren.
     link: https://forms.gle/rCRdDRydc1Ceda6y7
-  - icon: 📄
+  - icon: 🔬
     title: 3. Onderzoeksrapport R. Cavdar - mee bezig!
     details: Hoofdvraag<code v-pre>:</code> Welke technologieën kunnen er het beste gebruikt worden om studenten optimaal te matchen met wat er binnen de politie beschikbaar is?
   - icon: 🚀

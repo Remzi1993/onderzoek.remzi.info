@@ -31,7 +31,8 @@ export default defineConfig({
             text: 'Bijgewerkt op',
             formatOptions: {
                 dateStyle: 'full',
-                timeStyle: 'medium'
+                timeStyle: 'medium',
+                forceLocale: true,
             }
         },
         outline: {

@@ -1,0 +1,24 @@
+# Redirect all requests to remzi.netlify.app, cavdar.nl, www.cavdar.nl, and www.remzi.info to remzi.info
+[[redirects]]
+from = "https://onderzoek-remzi.netlify.app/*"
+to = "https://onderzoek.remzi.info/:splat"
+status = 301
+force = true
+
+# Default favicon redirect
+[[redirects]]
+from = "/favicon.ico"
+to = "https://storage.remzi.info/assets/images/logo.png"
+status = 301
+
+# Pages
+[[redirects]]
+from = "/"
+to = "/index.html"
+status = 200
+
+# 404
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 404

@@ -25,7 +25,7 @@ export default defineConfig({
     },
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
-        logo: './images/Politie.svg',
+        logo: './images/logo.png',
         siteTitle: false,
         lastUpdated: {
             text: 'Bijgewerkt op',

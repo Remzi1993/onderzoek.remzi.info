@@ -6,7 +6,8 @@ hero:
   text: "bij de politie"
   tagline: Meer informatie over mijn stageopdracht (PoC webapplicatie) en onderzoek die ik uitvooer voor de politie kan je hier op deze website vinden.
   image:
-    src: ./images/Politie-and-HvA.png
+    light: ./images/Politie-and-HvA.png
+    dark: ./images/Politie-and-HvA-darkmode.png
     alt: Logo van de politie en HvA
   actions:
     - theme: brand
@@ -37,10 +38,3 @@ features:
     title: 4. PoC webapplicatie - in ontwikkeling!
     details: Aan het ontwikkelen.
 ---
-
-<style module>
-.button {
-  color: red;
-  font-weight: bold;
-}
-</style>

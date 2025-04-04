@@ -25,7 +25,10 @@ export default defineConfig({
     },
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
-        logo: './images/logo.png',
+        logo: {
+            light: './images/logo.png',
+            dark: './images/logo-darkmode.png'
+        },
         siteTitle: false,
         lastUpdated: {
             text: 'Bijgewerkt op',
@@ -50,6 +53,8 @@ export default defineConfig({
             provider: 'local'
         },
         darkModeSwitchLabel: 'Donkere modus aan/uit',
+        lightModeSwitchTitle: 'Overschakelen naar lichte modus',
+        darkModeSwitchTitle: 'Overschakelen naar donkere modus',
         nav: [
             {text: 'Home', link: '/'},
             {text: 'Informatie', link: '/informatie'}

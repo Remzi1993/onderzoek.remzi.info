@@ -39,3 +39,9 @@ In het vooronderzoek heb ik gekeken naar de verschillende technologieën die ik 
 Het doel van deze vooronderzoek is om te onderzoeken welke technologieën het meest geschikt zijn voor de politie om studenten optimaal te matchen met wat er binnen de politie beschikbaar is.
 
 Mijn adviesrapport: https://docs.google.com/document/d/1ZYIZqp1j6l-tM62aZN3sl8YAIrpgRf7MGCfLjtA6nzM/edit?usp=sharing
+
+## Begeleiding
+Mijn bedrijfsbegeleider is: Vincent Krul (Politie)
+Mijn stagebegeleider is: Bas Bolier (Hogeschool van Amsterdam)
+
+Sem Bastings (Politie) treed op als product owner van de PoC applicatie.

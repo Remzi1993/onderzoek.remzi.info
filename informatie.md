@@ -22,3 +22,6 @@ Alvast bedankt voor je deelname!
 ### Enquêtes
 - Voor studenten die bij de politie stage lopen of werken: https://forms.gle/Msbva1bgS4iEkkLs7
 - Voor politiemedewerkers die stageplekken aanbieden en/of studenten begeleiden: https://forms.gle/rCRdDRydc1Ceda6y7
+
+## Vragen, opmerkingen of suggesties?
+Je kan me via Teams benaderen. Of e-mailen naar: remzi.cavdar@politie.nl of remzi.cavdar@hva.nl

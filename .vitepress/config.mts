@@ -26,8 +26,8 @@ export default defineConfig({
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
         logo: {
-            light: './images/logo.png',
-            dark: './images/logo-darkmode.png'
+            light: '/images/logo.png',
+            dark: '/images/logo-darkmode.png'
         },
         siteTitle: false,
         lastUpdated: {

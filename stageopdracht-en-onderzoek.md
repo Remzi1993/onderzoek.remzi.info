@@ -41,7 +41,7 @@ Het doel van deze vooronderzoek is om te onderzoeken welke technologieën het me
 Mijn adviesrapport: https://docs.google.com/document/d/1ZYIZqp1j6l-tM62aZN3sl8YAIrpgRf7MGCfLjtA6nzM/edit?usp=sharing
 
 ## Begeleiding
-Mijn bedrijfsbegeleider is: Vincent Krul (Politie)
+Mijn bedrijfsbegeleider is: Vincent Krul (Politie)<br>
 Mijn stagebegeleider is: Bas Bolier (Hogeschool van Amsterdam)
 
 Sem Bastings (Politie) treed op als product owner van de PoC applicatie.

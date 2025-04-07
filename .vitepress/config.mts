@@ -69,7 +69,7 @@ export default defineConfig({
             }
         ],
         socialLinks: [
-            {icon: 'github', link: 'https://github.com/Remzi1993/onderzoek.remzi.info'},
+            {icon: 'github', link: 'https://github.com/Remzi1993'},
             {icon: 'linkedin', link: 'https://www.linkedin.com/in/remzicavdar/'}
         ],
         footer: {
